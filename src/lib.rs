@@ -17,7 +17,7 @@
 //! # Examples
 //!
 //! ```
-//! use oxiroot_particle::{Particle, PdgId};
+//! use oxiparticle::{Particle, PdgId};
 //!
 //! // Decode an ID with no lookup — just arithmetic on the digits.
 //! assert!(PdgId::new(2212).is_baryon()); // proton
@@ -29,7 +29,7 @@
 //! let muon = Particle::from_name("mu-").unwrap();
 //! assert!((muon.mass().unwrap() - 105.6583755).abs() < 1e-4); // MeV
 //! assert!((muon.lifetime().unwrap() - 2197.0).abs() < 1.0); // ns
-//! assert_eq!(oxiroot_particle::literals::proton().charge(), Some(1.0));
+//! assert_eq!(oxiparticle::literals::proton().charge(), Some(1.0));
 //!
 //! // Iterate / filter the table.
 //! let n_leptons = Particle::all().filter(|p| p.pdgid().is_lepton()).count();
@@ -51,7 +51,7 @@
 //! The upstream BSD-3-Clause license (© Eduardo Rodrigues and Henry Schreiner)
 //! is reproduced in this crate's `LICENSE-3rdparty` file, as its terms require.
 
-#![doc(html_root_url = "https://docs.rs/oxiroot-particle")]
+#![doc(html_root_url = "https://docs.rs/oxiparticle")]
 
 mod data;
 mod enums;

@@ -30,7 +30,7 @@ fn finite(x: f64) -> Option<f64> {
 ///
 /// # Examples
 /// ```
-/// use oxiroot_particle::Particle;
+/// use oxiparticle::Particle;
 ///
 /// let pion = Particle::from_name("pi+").unwrap();
 /// assert_eq!(pion.pdg_id(), 211);
@@ -69,7 +69,7 @@ impl Particle {
     /// Every particle in the bundled table.
     ///
     /// ```
-    /// use oxiroot_particle::Particle;
+    /// use oxiparticle::Particle;
     /// // All the charged mesons lighter than 1 GeV:
     /// let light: Vec<_> = Particle::all()
     ///     .filter(|p| p.pdgid().is_meson() && p.charge() != Some(0.0))

@@ -1,11 +1,12 @@
 #!/usr/bin/env python
-"""Generate oxiroot-particle's data table + an oracle test fixture from scikit-hep `particle`."""
+"""Generate oxiparticle's data table + an oracle test fixture from scikit-hep `particle`."""
 import os
 from fractions import Fraction
 from particle import Particle
 from particle.pdgid import functions as F
 
-ROOT = "/Users/mathieuouillon/Documents/tmp/root-rs/crates/oxiroot-particle"
+# The crate root: this script lives in <root>/scripts/.
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.makedirs(os.path.join(ROOT, "src"), exist_ok=True)
 os.makedirs(os.path.join(ROOT, "tests", "fixtures"), exist_ok=True)
 

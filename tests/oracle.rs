@@ -3,7 +3,7 @@
 //! `scripts/gen_particle.py` from the `particle` package; here we replay them
 //! and assert every PDG-ID decoding and every derived particle quantity matches.
 
-use oxiroot_particle::{Particle, PdgId};
+use oxiparticle::{Particle, PdgId};
 
 #[allow(missing_docs)] // generated fixtures — the fields document themselves
 #[path = "fixtures/oracle_cases.rs"]

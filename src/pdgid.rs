@@ -61,7 +61,7 @@ const UNASSIGNED: [i64; 45] = [
 ///
 /// # Examples
 /// ```
-/// use oxiroot_particle::PdgId;
+/// use oxiparticle::PdgId;
 /// let electron = PdgId::new(11);
 /// assert!(electron.is_lepton());
 /// assert_eq!(electron.three_charge(), Some(-3)); // -1 e, in units of e/3

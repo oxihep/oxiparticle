@@ -7,7 +7,7 @@
 //! use [`Particle::from_name`] or [`Particle::from_pdgid`].
 //!
 //! ```
-//! use oxiroot_particle::literals as lp;
+//! use oxiparticle::literals as lp;
 //! assert_eq!(lp::proton().pdg_id(), 2212);
 //! assert_eq!(lp::electron().charge(), Some(-1.0));
 //! assert!(lp::jpsi().is_self_conjugate());
