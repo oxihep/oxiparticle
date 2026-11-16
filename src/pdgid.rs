@@ -255,10 +255,11 @@ impl PdgId {
         if aid == 2112 || aid == 2212 {
             return true;
         }
-        if self.digit(N10) == 1 && self.digit(N9) == 0 {
-            if let (Some(a), Some(z)) = (self.a(), self.z()) {
-                return a >= z.unsigned_abs() as i32;
-            }
+        if self.digit(N10) == 1
+            && self.digit(N9) == 0
+            && let (Some(a), Some(z)) = (self.a(), self.z())
+        {
+            return a >= z.unsigned_abs() as i32;
         }
         false
     }

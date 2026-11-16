@@ -12,8 +12,8 @@ mod oracle_cases;
 #[path = "fixtures/particle_cases.rs"]
 mod particle_cases;
 
-use oracle_cases::{Case, CASES, NONE, PRED_NAMES};
-use particle_cases::{PCase, NONE_I, PARTICLE_CASES};
+use oracle_cases::{CASES, Case, NONE, PRED_NAMES};
+use particle_cases::{NONE_I, PARTICLE_CASES, PCase};
 
 /// Evaluate a named predicate on a `PdgId` — the mapping mirrors the order the
 /// generator wrote into `PRED_NAMES` / `Case::preds`.
@@ -52,11 +52,7 @@ fn eval_pred(name: &str, id: PdgId) -> bool {
 }
 
 fn opt_i32(v: i64) -> Option<i32> {
-    if v == NONE {
-        None
-    } else {
-        Some(v as i32)
-    }
+    if v == NONE { None } else { Some(v as i32) }
 }
 
 #[test]

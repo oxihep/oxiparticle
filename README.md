@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/oxihep/oxiparticle/actions/workflows/ci.yml/badge.svg)](https://github.com/oxihep/oxiparticle/actions/workflows/ci.yml)
 [![License: MIT AND BSD-3-Clause](https://img.shields.io/badge/license-MIT%20AND%20BSD--3--Clause-blue.svg)](LICENSE)
-[![Rust 1.95+](https://img.shields.io/badge/rust-1.95%2B-orange.svg)](https://www.rust-lang.org)
+[![Rust 1.100+](https://img.shields.io/badge/rust-1.100%2B-orange.svg)](https://www.rust-lang.org)
 
 Pure-Rust PDG particle data — a Rust take on
 [scikit-hep `particle`](https://github.com/scikit-hep/particle), with no
