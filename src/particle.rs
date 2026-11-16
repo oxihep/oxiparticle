@@ -3,7 +3,7 @@
 //! cτ, charge). Looked up by [`from_pdgid`](Particle::from_pdgid) or
 //! [`from_name`](Particle::from_name).
 
-use crate::data::{Row, PARTICLES};
+use crate::data::{PARTICLES, Row};
 use crate::enums::{Inv, Parity, SpinType, Status};
 use crate::pdgid::PdgId;
 
@@ -15,11 +15,7 @@ const C_LIGHT_MM_NS: f64 = 299.792_458;
 
 /// `NaN` (used in the table for an unknown value) becomes `None`.
 fn finite(x: f64) -> Option<f64> {
-    if x.is_nan() {
-        None
-    } else {
-        Some(x)
-    }
+    if x.is_nan() { None } else { Some(x) }
 }
 
 /// A particle from the bundled PDG table — a cheap `Copy` handle onto its data.
@@ -223,14 +219,14 @@ impl Particle {
         if big_j <= 2 {
             match self.parity() {
                 Parity::Plus => {
-                    return [SpinType::Scalar, SpinType::Axial, SpinType::Tensor][big_j]
+                    return [SpinType::Scalar, SpinType::Axial, SpinType::Tensor][big_j];
                 }
                 Parity::Minus => {
                     return [
                         SpinType::PseudoScalar,
                         SpinType::Vector,
                         SpinType::PseudoTensor,
-                    ][big_j]
+                    ][big_j];
                 }
                 Parity::Unknown => {}
             }
