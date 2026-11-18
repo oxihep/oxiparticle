@@ -71,6 +71,15 @@ This crate was `oxiroot-particle` inside the
 [oxiroot](https://github.com/oxihep/oxiroot) workspace; its history was carried
 over when it moved here.
 
+## AI assistance
+
+This project is developed with the help of AI coding assistants. Under the
+author's direction they wrote and reviewed much of the code, the tests and
+the documentation. Every change goes through the same checks either way: the
+test suite and CI (including checks against scikit-hep's particle package)
+and review before it is merged. If something looks wrong, please open an
+issue.
+
 ## License
 
 MIT for the Rust code (see [LICENSE](LICENSE)). The bundled PDG table and the
