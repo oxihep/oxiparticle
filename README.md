@@ -47,6 +47,16 @@ pip install particle
 python scripts/gen_particle.py
 ```
 
+## Examples
+
+Runnable physics examples (`cargo run --example <name>`):
+
+| Example | Shows |
+| --- | --- |
+| [`mc_truth`](examples/mc_truth.rs) | Decode a generator's event record (a ttH(→bb) slice, a deuteron, a neutralino): family, charge, spin, heavy flavour and mass per PDG ID |
+| [`flight_distance`](examples/flight_distance.rs) | cτ and the mean flight distance βγcτ of B, D, τ, K⁰_S, Λ, π, μ… at 5–100 GeV: why b-tagging and V0 finding work |
+| [`two_body_decays`](examples/two_body_decays.rs) | Rest-frame momentum p* and Q-value of Z → μμ, B⁺ → J/ψK⁺, K⁰_S → ππ, Λ → pπ…, and a decay that is kinematically forbidden |
+
 ## The oxihep family
 
 Rust crates for high-energy physics, split the way Python's
