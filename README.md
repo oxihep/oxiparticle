@@ -18,7 +18,7 @@ dependencies:
 
 ```toml
 [dependencies]
-oxiparticle = { git = "https://github.com/oxihep/oxiparticle", tag = "v0.1.0" }
+oxiparticle = { git = "https://github.com/oxihep/oxiparticle", tag = "v0.2.0" }
 ```
 
 ```rust

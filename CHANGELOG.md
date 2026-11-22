@@ -6,6 +6,18 @@ Notable changes to oxiparticle, by release. The format follows
 
 ## [Unreleased]
 
+## [0.2.0]
+
+Rust 1.100 and the 2024 edition, and three examples. No change to the API.
+
+### Added
+
+- Three examples: `mc_truth` decodes the particles of a Monte Carlo truth
+  record from their PDG IDs, `flight_distance` turns lifetimes into flight
+  distances, and `two_body_decays` works out two-body decay kinematics
+  from the table's masses.
+- The API documentation is published to GitHub Pages.
+
 ### Changed
 
 - **Rust 1.100 and edition 2024.** The minimum supported Rust version

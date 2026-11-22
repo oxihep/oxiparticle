@@ -1,6 +1,6 @@
 [package]
 name = "oxiparticle"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 rust-version = "1.100"
 # The particle table and the PdgId decoder derive from scikit-hep `particle`
